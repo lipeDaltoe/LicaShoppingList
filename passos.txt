@@ -1,0 +1,10 @@
+npx create-expo-app LicaShoppingList
+
+EXPO ROUTER - cd
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+Configurar o Router:
+    - package.json
+    - app.json
+
+npx expo start --localhost --android
