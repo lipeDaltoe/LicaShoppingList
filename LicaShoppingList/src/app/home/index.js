@@ -1,6 +1,5 @@
 import React from 'react'
 import { 
-  StyleSheet, 
   Text, 
   View, 
   SafeAreaView, 
@@ -10,6 +9,7 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons }  from '@expo/vector-icons';
+import { styles } from './style';
 
 export default function Home() {
   return (
@@ -27,7 +27,17 @@ export default function Home() {
         {/* Lista de Produto */}
 
         <View style={styles.footer}>
-
+          <View style={styles.inputContainer}>
+            <TextInput 
+              color= '#fff'
+              fontSize={18}
+              placeholderTextColor='#aeaeae'
+              placeholder='Digite o Nome da Tarefa...'
+            />
+          </View>
+          <TouchableOpacity style={styles.iconContainer}>
+            <Ionicons name='add' size={36} color='#fff'/>
+          </TouchableOpacity>
         </View>
 
       </ImageBackground>
@@ -35,5 +45,3 @@ export default function Home() {
     </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({})
