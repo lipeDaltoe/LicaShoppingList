@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20,
         justifyContent: 'center',
     },
-    inputContainer: {
+    iconContainer: {
         borderRadius: 25,
         elevation: 40,
         height: 50,
